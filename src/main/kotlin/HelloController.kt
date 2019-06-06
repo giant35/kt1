@@ -8,8 +8,8 @@ class HelloController {
 
     @GetMapping("/hello")
     fun hello(name: String): String {
-        println("hello name333222222:sss2222" + name)
-        return "e3fvdsgfd你好${name} p"
+        println("hello name333222222:sss2a" + name)
+        return "e3fvdsgfd你好$name p"
     }
 
 }

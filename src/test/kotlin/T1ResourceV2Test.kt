@@ -1,27 +1,23 @@
 package demo
 
 import org.junit.Test
+
 import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.test.context.junit4.SpringRunner
 
+
 @SpringBootTest
 @RunWith(SpringRunner::class)
-internal class HelloControllerTest {
+class T1ResourceV2Test {
 
     @Autowired
-    var c : HelloController? = null
+    var res: T1ResourceV2? = null
 
     @Test
-    fun testhello() {
-        val t = c?.hello("aaa")
-        println("t:${t}")
-    }
-
-    @Test
-    fun testlist() {
-        val l = c?.list()
-        println("l:" + l)
+    fun list() {
+        val l = res!!.list()
+        println("val:$l")
     }
 }
